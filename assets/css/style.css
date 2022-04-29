@@ -3,3 +3,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: burlywood;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: white;
+    width: fit-content;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px black;
+    cursor: context-menu;
+}
+
+h1 {
+    padding: 2rem;
+}
+
+li {
+    list-style: none;
+    padding: 2rem;
+    transition: background-color 250ms linear;
+}
+
+li:last-child {
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+li:hover {
+    background-color: rgb(249, 215, 150);
+}
