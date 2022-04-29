@@ -2,7 +2,6 @@ const app = new Vue({
     el: '#app',
     data: {
         my_data: null,
-        emails: null,
     },
     methods: {},
     mounted() {
@@ -15,10 +14,6 @@ const app = new Vue({
                 //console.log(response.data)
                 this.my_data.push(response.data)
                     //console.log(this.my_data);
-                    /*                 if (this.my_data.length = 10) {
-                                        this.emails = this.my_data
-                                    }
-                     */
             })
         }
     }

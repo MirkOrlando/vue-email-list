@@ -14,11 +14,15 @@
     <div id="app">
         <div class="container">
             <h1>Email List</h1>
-            <ul>
-                <li v-for="r in my_data">
-                    {{r.response}}
-                </li>
-            </ul>
+            <div class="wrapper" v-if="my_data">
+                <ul v-if="my_data.length === 10">
+                    <li v-for="r in my_data">
+                        {{r.response}}
+                    </li>
+                </ul>
+                <p v-else>Loading the email list...</p>
+            </div>
+            <p v-else>Nothing to display</p>
         </div>
     </div>
     <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js'></script>

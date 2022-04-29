@@ -40,3 +40,9 @@ li:hover {
     background-color: rgb(249, 215, 150);
     border-color: transparent;
 }
+
+p {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+}
