@@ -6,10 +6,12 @@
 
 body {
     background-color: burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
     max-width: 1200px;
+    min-width: 500px;
     margin: 2rem auto;
     background-color: white;
     width: fit-content;
@@ -25,7 +27,8 @@ h1 {
 li {
     list-style: none;
     padding: 2rem;
-    transition: background-color 250ms linear;
+    transition: all 250ms linear;
+    border: 1px solid rgb(231, 231, 195);
 }
 
 li:last-child {
@@ -35,4 +38,5 @@ li:last-child {
 
 li:hover {
     background-color: rgb(249, 215, 150);
+    border-color: transparent;
 }

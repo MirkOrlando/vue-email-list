@@ -15,10 +15,9 @@
         <div class="container">
             <h1>Email List</h1>
             <ul>
-                <li>elemento</li>
-                <li>elemento</li>
-                <li>elemento</li>
-                <li>elemento</li>
+                <li v-for="r in my_data">
+                    {{r.response}}
+                </li>
             </ul>
         </div>
     </div>
